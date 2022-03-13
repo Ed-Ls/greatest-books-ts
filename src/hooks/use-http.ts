@@ -1,6 +1,9 @@
 import { useReducer, useCallback } from "react";
 
-function httpReducer(state, action) {
+function httpReducer(
+  state: { status: string | null; data: [] | null; error: [] | null },
+  action: { type: string; responseData?: any; errorMessage?: any }
+) {
   if (action.type === "SEND") {
     return {
       data: null,
@@ -28,7 +31,10 @@ function httpReducer(state, action) {
   return state;
 }
 
-function useHttp(requestFunction, startWithPending = false) {
+function useHttp(
+  requestFunction: (requestData?: any) => void,
+  startWithPending = false
+) {
   const [httpState, dispatch] = useReducer(httpReducer, {
     status: startWithPending ? "pending" : null,
     data: null,
@@ -36,12 +42,12 @@ function useHttp(requestFunction, startWithPending = false) {
   });
 
   const sendRequest = useCallback(
-    async function (requestData) {
+    async function (requestData?: any) {
       dispatch({ type: "SEND" });
       try {
         const responseData = await requestFunction(requestData);
         dispatch({ type: "SUCCESS", responseData });
-      } catch (error) {
+      } catch (error: any) {
         dispatch({
           type: "ERROR",
           errorMessage: error.message || "Something went wrong!",
