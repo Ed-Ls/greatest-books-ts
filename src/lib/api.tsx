@@ -1,5 +1,4 @@
-const FIREBASE_DOMAIN =
-  "https://react-books-7c388-default-rtdb.europe-west1.firebasedatabase.app/";
+const FIREBASE_DOMAIN = "ADD_YOUR_FIREBASE_REALTIME_DATABASE";
 
 export async function getAllBooks() {
   const response = await fetch(`${FIREBASE_DOMAIN}/books.json`);
