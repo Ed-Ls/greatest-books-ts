@@ -1,13 +1,59 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #592d9a;
+}
+
+.centered {
+  margin: 3rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.focused {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  background: #592d9a;
+  box-shadow: inset 10px 10px 20px #442275, inset -10px -10px 20px #6e38bf;
+}
+
+.btn:hover,
+.btn:active {
+  background: #592d9a;
+  box-shadow: 10px 10px 20px #442275, -10px -10px 20px #6e38bf;
+}
+
+.btn--flat {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  text-decoration: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  background: #592d9a;
+  box-shadow: inset 10px 10px 20px #442275, inset -10px -10px 20px #6e38bf;
+}
+
+.btn--flat:hover,
+.btn--flat:active {
+  background: #592d9a;
+  box-shadow: 10px 10px 20px #442275, -10px -10px 20px #6e38bf;
+  color: white;
 }

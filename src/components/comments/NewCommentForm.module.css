@@ -1,0 +1,63 @@
+.form {
+  margin-top: 1rem;
+  position: relative;
+  text-align: center;
+}
+
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(66, 0, 128, 0.479);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control {
+  margin-bottom: 0.5rem;
+}
+
+.control label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.control textarea {
+  font: inherit;
+  padding: 0.35rem;
+  border-radius: 4px;
+  background: #592d9a;
+  box-shadow: inset 10px 10px 20px #442275, inset -10px -10px 20px #6e38bf;
+  outline: none;
+  border: none;
+  display: block;
+  width: 100%;
+  font-size: 1.25rem;
+}
+
+.control textarea:focus {
+  background: #592d9a;
+  box-shadow: 10px 10px 20px #442275, -10px -10px 20px #6e38bf;
+  outline: none;
+  border: none;
+}
+
+.actions button {
+  text-decoration: none;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  margin: 0.8rem;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  background: #592d9a;
+  box-shadow: inset 10px 10px 20px #442275, inset -10px -10px 20px #6e38bf;
+}
+
+.actions button:hover,
+.actions button:active {
+  background: #592d9a;
+  box-shadow: 10px 10px 20px #442275, -10px -10px 20px #6e38bf;
+}

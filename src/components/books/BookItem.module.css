@@ -1,0 +1,52 @@
+.item {
+  margin: 2rem 0;
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  background: linear-gradient(145deg, #5f30a5, #50298b);
+  box-shadow: 10px 10px 20px #442275, -10px -10px 20px #6e38bf;
+}
+
+.item:last-of-type {
+  border-bottom: none;
+}
+
+.item figure {
+  margin: 0;
+  padding: 0;
+  width: 70%;
+}
+
+.item blockquote {
+  margin: 0;
+  text-align: left;
+  font-size: 1.5rem;
+  color: #e3e9e9;
+}
+
+.item p {
+  margin: 0;
+  margin-bottom: 0.25rem;
+}
+
+.item figcaption {
+  font-style: italic;
+  color: #b098d3;
+}
+
+.stars {
+  display: flex;
+}
+
+.item span {
+  display: block;
+  margin: 0.5rem 0.2rem;
+  font-size: 15px;
+  color: #320e68;
+}
+
+.item span:before {
+  content: "\2605";
+}

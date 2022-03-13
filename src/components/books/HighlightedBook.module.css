@@ -1,0 +1,49 @@
+.book {
+  color: white;
+  border-radius: 20px;
+  padding: 3rem;
+  margin: 3rem auto;
+  width: 90%;
+  max-width: 40rem;
+  background: linear-gradient(145deg, #602fab, #512890);
+  box-shadow: 10px 10px 28px #311856, -10px -10px 28px #8340ea;
+}
+
+.book h1 {
+  font-size: 2.5rem;
+}
+
+.book h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.book figcaption {
+  font-style: italic;
+  font-size: 1.5rem;
+  text-align: right;
+  color: rgb(191, 169, 212);
+}
+
+.stars {
+  display: flex;
+}
+
+.book span {
+  display: block;
+  margin: 0.5rem 0.2rem;
+  font-size: 1.7rem;
+  color: #320e68;
+}
+
+.grey {
+  color: rgb(95, 95, 95);
+  display: block;
+  margin: 0.5rem 0.2rem;
+  font-size: 15px;
+}
+
+.book span:before {
+  content: "\2605";
+}
